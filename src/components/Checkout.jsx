@@ -1,4 +1,3 @@
-// src/pages/Checkout.jsx
 import React, { useState } from 'react';
 import "../styles/Checkout.css"; // Ensure you have styles for the checkout page
 import PaymentMethodSelector from '../components/PaymentMethodSelector';
@@ -6,6 +5,7 @@ import PaymentMethodSelector from '../components/PaymentMethodSelector';
 const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
     const [rentalDays, setRentalDays] = useState({});
     const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
+    
     
     // Credit Card state
     const [cardDetails, setCardDetails] = useState({
@@ -22,6 +22,11 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
     const totalPrice = rentedBooks.reduce((total, book) => total + (book.price * (rentalDays[book.id] || 1)), 0);
 
     const handleOrder = () => {
+        if (!selectedPaymentMethod) {
+            alert('กรุณาเลือกวิธีการชำระเงินก่อนทำการสั่งซื้อ');
+            return;
+        }
+
         const orderedBooks = rentedBooks.map(book => ({
             ...book,
             expiration: new Date(Date.now() + (rentalDays[book.id] || 1) * 24 * 60 * 60 * 1000),
@@ -63,7 +68,6 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
                 <h3>ราคาสุทธิ :  <span className="total-price">{totalPrice} Baht</span></h3>
             </div>
             <PaymentMethodSelector onSelectPaymentMethod={setSelectedPaymentMethod} />
-            {/* Credit Card Details Section */}
             {selectedPaymentMethod === 'CreditCard' && (
                 <div className="credit-card-details">
                     <h3>Enter Credit Card Details:</h3>
@@ -119,7 +123,13 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
                     </form>
                 </div>
             )}
-            <button className="place-order-button" onClick={handleOrder}>ยืนยันคำสั่งซื้อ</button>
+            <button 
+                className="place-order-button" 
+                onClick={handleOrder} 
+                disabled={!selectedPaymentMethod} // ปิดการใช้งานปุ่มหากยังไม่ได้เลือกวิธีการชำระเงิน
+            >
+                ยืนยันคำสั่งซื้อ
+            </button>
         </div>
     );
 };

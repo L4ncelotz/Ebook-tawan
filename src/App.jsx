@@ -19,7 +19,8 @@ const App = () => {
       description: ' นิยายที่ตั้งอยู่ในยุคแจ๊ส สํารวจธีมของความหรูหราและความฟุ่มเฟือย',
       category: 'Fiction',
       price: 10,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg',
+      fileLink: "https://www.gutenberg.org/cache/epub/64317/pg64317-images.html"
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ const App = () => {
       description: ' นิยายเกี่ยวกับปัญหาสำคัญของการข่มขืนและความไม่เท่าเทียมทางเชื้อชาติ ผ่านมุมมองของเด็ก',
       category: 'Fiction',
       price: 12,
-      image: 'https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg'
+      image: 'https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg',
+      fileLink:"https://fliphtml5.com/dgcyo/omxg/To_Kill_A_Mockingbird/"
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ const App = () => {
       description: ' นิยายดิสโทเปียที่สำรวจอันตรายของระบอบเผด็จการและอุดมการณ์ทางการเมืองที่รุนแรง',
       category: 'Fiction',
       price: 15,
-      image: 'https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_UF1000,1000_QL80_.jpg'
+      image: 'https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_UF1000,1000_QL80_.jpg',
+      fileLink:"https://www.globalgreyebooks.com/online-ebooks/george-orwell_nineteen-eighty-four_complete-text.html"
     },
     {
       id: 4,
@@ -46,7 +49,8 @@ const App = () => {
       description: ' นิยายโรแมนติกที่วิพากษ์วิจารณ์ชนชั้นสูงในอังกฤษตอนปลายศตวรรษที่ 18',
       category: 'Fiction',
       price: 9,
-      image: 'https://m.media-amazon.com/images/I/712P0p5cXIL._AC_UF1000,1000_QL80_.jpg'
+      image: 'https://m.media-amazon.com/images/I/712P0p5cXIL._AC_UF1000,1000_QL80_.jpg',
+      fileLink:"https://fliphtml5.com/kmpjh/uneq/PRIDE_AND_PREJUDICE/"
     },
     {
       id: 5,
@@ -55,7 +59,8 @@ const App = () => {
       description: ' เรื่องราวเกี่ยวกับความรู้สึกแปลกแยกของวัยรุ่นและการสูญเสียความบริสุทธิ์ในอเมริกาหลังสงคราม',
       category: 'Fiction',
       price: 11,
-      image: 'https://www.asiabooks.com/media/catalog/product/cache/a5ac216be58c0cbce1cb04612ece96dc/1/0/1000237540_front_xxxl_114.jpg'
+      image: 'https://www.asiabooks.com/media/catalog/product/cache/a5ac216be58c0cbce1cb04612ece96dc/1/0/1000237540_front_xxxl_114.jpg',
+      fileLink:"https://fliphtml5.com/gafpm/kkok/The_Catcher_in_the_Rye/s"
     },
     {
       id: 6,
@@ -64,7 +69,8 @@ const App = () => {
       description: ' การสำรวจที่คิดอย่างลึกซึ้งเกี่ยวกับประวัติศาสตร์และผลกระทบของมนุษย์โฮโมเซเปียน',
       category: 'Non-Fiction',
       price: 20,
-      image: 'https://inwfile.com/s-dl/73v5gp.jpg'
+      image: 'https://inwfile.com/s-dl/73v5gp.jpg',
+      fileLink:"https://fliphtml5.com/okoeb/odsu/Sapiens__A_Brief_History_of_Humankind_%28_PDFDrive_%29/"
     },
     {
       id: 7,
