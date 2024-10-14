@@ -6,9 +6,9 @@ const Header = () => {
         <header>
             <h1>Online Book Rental</h1>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/search">Search</Link>
-                <Link to="/profile">Profile</Link>
+                <Link to="/">หน้าหลัก</Link>
+                <Link to="/search">ค้นหา</Link>
+                <Link to="/profile">โปรไฟล์</Link>
             </nav>
         </header>
     );

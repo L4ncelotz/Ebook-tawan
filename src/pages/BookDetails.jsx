@@ -19,7 +19,7 @@ const BookDetail = ({ books }) => {
     return (
         <div className="book-detail-container">
             <button className="back-button" onClick={handleBack}>
-                Back
+                ย้อนกลับ
             </button>
             <div className="book-detail">
                 <img src={book.image} alt={book.title} className="book-detail-image" />
@@ -27,7 +27,7 @@ const BookDetail = ({ books }) => {
                     <h1 className="book-title">{book.title}</h1>
                     <h2 className="book-author">by {book.author}</h2>
                     <p className="book-description">{book.description}</p>
-                    <p className="book-price">Price: ${book.price}</p>
+                    <p className="book-price">Price per Day : ฿ {book.price}</p>
                 </div>
             </div>
         </div>

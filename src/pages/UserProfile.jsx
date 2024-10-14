@@ -9,10 +9,10 @@ const UserProfile = ({ previouslyOrderedBooks = [] }) => {
 
     return (
         <div className="user-profile-container">
-            <h2 className="user-profile-header">User Profile</h2>
-            <h3 className="ordered-books-header">Your Previously Ordered Books:</h3>
+            <h2 className="user-profile-header">โปรไฟล์ผู้ใช้</h2>
+            <h3 className="ordered-books-header">หนังสือที่คุณเช่าก่อนหน้านี้ :</h3>
             {sortedOrderedBooks.length === 0 ? (
-                <p className="no-books-message">No previously ordered books.</p>
+                <p className="no-books-message">ไม่มีหนังสือที่เช่ามาก่อน</p>
             ) : (
                 <ul className="ordered-books-list">
                     {sortedOrderedBooks.map((book) => (

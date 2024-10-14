@@ -10,7 +10,7 @@ const BookCard = ({ book, buttonLabel, onRent }) => {
     };
 
     const handleRent = (id) => {
-        alert(`"${book.title}" has been added to your cart!`); // Notification when renting
+        alert(`"${book.title}" ถูกเพิ่มในตะกร้าสินค้าของคุณ!`); // Notification when renting
         if (onRent) {
             onRent(id); // Call the onRent function passed from parent
         }
@@ -41,7 +41,7 @@ const BookCard = ({ book, buttonLabel, onRent }) => {
                     </button>
                 )}
                 <Link to={`/books/${book.id}`}>
-                    <button className="view-button">View Details</button>
+                    <button className="view-button">ดูรายละเอียด</button>
                 </Link>
             </div>
         </div>

@@ -26,7 +26,7 @@ const SearchResults = ({ books, onRent }) => {
             </div>
             <div className="book-list">
                 {filteredBooks.map(book => (
-                    <BookCard key={book.id} book={book} onRent={onRent} buttonLabel="Rent" />
+                    <BookCard key={book.id} book={book} onRent={onRent} buttonLabel="เช่า" />
                 ))}
             </div>
         </div>

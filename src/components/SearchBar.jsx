@@ -15,11 +15,11 @@ const SearchBar = ({ onSearch }) => {
         <form onSubmit={handleSearch} className="search-bar"> {/* Add className for styling */}
             <input 
                 type="text" 
-                placeholder="Search for books..." 
+                placeholder="ค้นหาหนังสือที่ต้องการ.." 
                 value={query} 
                 onChange={(e) => setQuery(e.target.value)} 
             />
-            <button type="submit">Search</button>
+            <button type="submit">ค้นหา</button>
         </form>
     );
 };

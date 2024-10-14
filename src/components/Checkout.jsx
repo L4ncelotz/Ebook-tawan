@@ -37,16 +37,16 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
 
     return (
         <div className="checkout-container">
-            <h1 className="checkout-header">Checkout</h1>
+            <h1 className="checkout-header">ตะกร้าสินค้า</h1>
             <div className="rented-books-list">
-                <h2>Rented Books:</h2>
+                <h3>หนังสือที่เลือกไว้ : </h3>
                 <ul className="checkout-list">
                     {rentedBooks.map((book) => (
                         <li key={book.id} className="checkout-item">
-                            <span>{book.title} - Price per day: {book.price} Baht</span>
+                            <span>{book.title} - ราคาต่อวัน : {book.price} บาท </span>
                             <div className="rental-days-input">
                                 <label>
-                                    Days to rent:
+                                    จำนวนวันที่เช่า :  <span></span>
                                     <input 
                                         type="number" 
                                         min="1" 
@@ -60,7 +60,7 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
                 </ul>
             </div>
             <div className="total-price-container">
-                <h3>Total Price: <span className="total-price">{totalPrice} Baht</span></h3>
+                <h3>ราคาสุทธิ :  <span className="total-price">{totalPrice} Baht</span></h3>
             </div>
             <PaymentMethodSelector onSelectPaymentMethod={setSelectedPaymentMethod} />
             {/* Credit Card Details Section */}
@@ -119,7 +119,7 @@ const Checkout = ({ rentedBooks, onOrder, setRentedBooks }) => {
                     </form>
                 </div>
             )}
-            <button className="place-order-button" onClick={handleOrder}>Place Order</button>
+            <button className="place-order-button" onClick={handleOrder}>ยืนยันคำสั่งซื้อ</button>
         </div>
     );
 };

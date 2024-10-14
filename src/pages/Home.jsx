@@ -15,7 +15,7 @@ const Home = ({ onSearch, books }) => {
             <h3>Recommended Books</h3>
             <div className="recommended-books">
                 {recommendedBooks.map(book => (
-                    <BookCard key={book.id} book={book} buttonLabel="View Details" showDetails={true} />
+                    <BookCard key={book.id} book={book} buttonLabel="ดูรายละเอียด" showDetails={true} />
                 ))}
             </div>
         </div>

@@ -11,7 +11,7 @@ const PaymentMethodSelector = ({ onSelectPaymentMethod }) => {
 
     return (
         <div className="payment-method-selector">
-            <h3>Select Payment Method</h3>
+            <h3>เลือกช่องทางการจ่ายเงิน</h3>
             <div>
                 <label>
                     <input

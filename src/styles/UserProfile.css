@@ -6,7 +6,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff; /* White background */
-    font-family: 'Arial', sans-serif; /* Font family */
+    /* Font family */
 }
 
 .user-profile-header {
@@ -66,4 +66,16 @@
 .order-date, .expiration-date, .quantity {
     display: inline-block; /* Align items in a row */
     margin-left: 15px; /* Spacing between items */
+}
+
+/* src/App.css or src/index.css */
+
+
+/* src/styles/UserProfile.css or your relevant CSS file */
+
+/* Change font style for the placeholder text in the search bar */
+input::placeholder {
+    font-family: "Kanit", sans-serif; /* Use Kanit font */
+    font-weight: 500; /* Adjust font weight if needed */
+    color: #999; /* Change the placeholder color if needed */
 }
